@@ -14,6 +14,20 @@
  * @package WordPress
  */
 
+ /**
+  * Local configuration information.
+  *
+  * If you are working in a local/desktop development environment and want to
+  * keep your config separate, we recommend using a 'wp-config-local.php' file,
+  * which you should also make sure you .gitignore.
+  */
+	if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
+  	include dirname( __FILE__ ) . '/wp-config-local.php';
+  }
+ else {
+
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'hnwprogram_com');
@@ -22,7 +36,7 @@ define('DB_NAME', 'hnwprogram_com');
 define('DB_USER', 'hnwprogramcom');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'HAxX6nCH');
+define('DB_PASSWORD', 'healthnwealth33');
 
 /** MySQL hostname */
 define('DB_HOST', 'mysql.hnwprogram.com');
@@ -84,7 +98,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', false);}
 
 /* That's all, stop editing! Happy blogging. */
 
@@ -94,4 +108,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
