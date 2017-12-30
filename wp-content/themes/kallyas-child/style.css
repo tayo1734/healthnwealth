@@ -9,3 +9,32 @@ Version:        4.0.0
 Tags: dark, light, left-sidebar, right-sidebar, fluid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, full-width-template, theme-options, translation-ready
 Text Domain:  zn_framework
 */
+
+div#logo-container {
+    padding-left: 30px;
+}
+/* MAIN NAVIGATION EDITS */
+a.main-menu-link.main-menu-link-top {
+    LETTER-SPACING: 2PX;
+}
+.site-header-main-right-top {
+    WIDTH: 252PX;
+    PADDING: 0 30PX;
+}
+a.sh-component.ctabutton.cta-button-0.kl-cta-custom.btn.btn-lined.btn-custom-color.btn-md.zn_dummy_value.cta-icon--before.btn--square span {
+  color:#fff;
+}
+
+/* MISC. EDITS */
+#totop {
+  height: 70px;
+  width: 70px;
+  border-radius: 72px;
+  padding: 37px 0 21px;
+}
+#totop:before {
+    top: 20px;
+}
+.btn {
+  transition: all 0.3s ease 0s !important;
+}
